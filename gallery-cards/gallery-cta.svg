@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="670" viewBox="0 0 1250 670">
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#132842"/><stop offset="1" stop-color="#253F69"/></linearGradient></defs>
+<rect width="1250" height="670" fill="url(#b)"/>
+<circle cx="1030" cy="330" r="275" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="1"/>
+<circle cx="1030" cy="330" r="220" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="1"/>
+<path d="M845 500c78-74 135-95 245-94 60 0 115 12 160 40" fill="none" stroke="#B78356" stroke-width="3" stroke-opacity=".6"/>
+<text x="80" y="249" font-family="Manrope,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#C4D0E5">LET’S MAKE YOUR NEXT PROJECT ONE OF THEM</text>
+<text x="80" y="321" font-family="Manrope,Arial,sans-serif" font-size="44" font-weight="700" fill="#FFF">Ready to transform</text>
+<text x="80" y="376" font-family="Manrope,Arial,sans-serif" font-size="44" font-weight="700" fill="#FFF">your space?</text>
+<text x="80" y="421" font-family="Manrope,Arial,sans-serif" font-size="16" fill="#E4EAF2">Tell us about your project and our team will help you</text>
+<text x="80" y="447" font-family="Manrope,Arial,sans-serif" font-size="16" fill="#E4EAF2">plan the right finish for your space.</text>
+<rect x="80" y="486" width="224" height="54" rx="27" fill="#FFF"/>
+<circle cx="108" cy="513" r="10" fill="none" stroke="#203D78" stroke-width="1.8"/><path d="M105 509q1 5 6 7l2-2 3 2q-1 4-5 3-7-3-8-9z" fill="#203D78"/>
+<text x="126" y="518" font-family="Manrope,Arial,sans-serif" font-size="14" font-weight="700" fill="#203D78">Chat on WhatsApp</text><path d="M275 513h12m-5-5 5 5-5 5" fill="none" stroke="#203D78" stroke-width="1.5"/>
+</svg>

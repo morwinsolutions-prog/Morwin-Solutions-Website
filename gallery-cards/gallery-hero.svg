@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="480" viewBox="0 0 1250 480">
+<rect width="1250" height="480" fill="#F5F2EC"/>
+<path d="M0 0h1250v480H0z" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#F6F2EB"/><stop offset="1" stop-color="#EEE8DD"/></linearGradient></defs>
+<text x="80" y="91" font-family="Manrope,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2.1" fill="#526A9E">OUR PROJECTS</text>
+<text x="80" y="177" font-family="Manrope,Arial,sans-serif" font-size="59" font-weight="700" fill="#263748">Spaces we have</text>
+<text x="80" y="245" font-family="Manrope,Arial,sans-serif" font-size="59" font-weight="700" fill="#263748">painted<tspan fill="#B78356">.</tspan></text>
+<text x="80" y="292" font-family="Manrope,Arial,sans-serif" font-size="17" fill="#46515D">A look at the homes, workplaces and learning spaces</text>
+<text x="80" y="318" font-family="Manrope,Arial,sans-serif" font-size="17" fill="#46515D">we have helped transform.</text>
+<path d="M80 369H1170" stroke="#D9D2C8"/>
+<g font-family="Manrope,Arial,sans-serif"><text x="80" y="421" font-size="31" font-weight="700" fill="#233F78">24</text><text x="80" y="446" font-size="13" fill="#5A6470">Projects</text>
+<path d="M340 388v64M610 388v64M880 388v64" stroke="#D6D0C7"/>
+<text x="380" y="421" font-size="31" font-weight="700" fill="#233F78">12</text><text x="380" y="446" font-size="13" fill="#5A6470">Residential</text>
+<text x="650" y="421" font-size="31" font-weight="700" fill="#233F78">3</text><text x="650" y="446" font-size="13" fill="#5A6470">Commercial</text>
+<text x="920" y="421" font-size="31" font-weight="700" fill="#233F78">9</text><text x="920" y="446" font-size="13" fill="#5A6470">Schools &amp; colleges</text></g>
+</svg>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects – Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Colours estimated from your home page screenshot. Change these 6 values to match exactly. */
+:root{
+  --navy:#0E2747;        /* buttons, footer, headings */
+  --blue:#2D5BD0;        /* small section labels */
+  --tan:#A9835B;         /* highlighted word in headline */
+  --bg:#FFFFFF;
+  --beige:#F4F0E9;       /* soft section background */
+  --text:#1B2A3D;
+  --muted:#667487;
+  --line:#E4E0D8;
+  --font:"Manrope","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1180px;margin:auto;padding:0 clamp(16px,4vw,40px)}
+.label{display:block;color:var(--blue);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.logo{display:flex;align-items:center;font-weight:800;color:var(--navy);font-size:18px}
+.logo img{height:38px;display:block}
+.links{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600}
+.links a:hover,.links a[aria-current]{color:var(--blue)}
+.pill{background:var(--navy);color:#fff!important;padding:10px 18px;border-radius:999px;font-weight:700;font-size:13px;white-space:nowrap}
+.pill:hover{background:#17386a}
+.menu-btn{display:none;background:none;border:1.5px solid var(--line);border-radius:10px;padding:8px 12px;font:700 14px var(--font);color:var(--navy);cursor:pointer}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  .links{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;
+    padding:20px clamp(16px,4vw,40px);border-bottom:1px solid var(--line);gap:16px}
+  .links.open{display:flex}
+}
+
+/* hero */
+.hero{background:var(--beige);padding:clamp(56px,8vw,104px) 0 clamp(40px,6vw,72px)}
+.hero h1{font-weight:800;font-size:clamp(40px,7vw,76px);line-height:1.02;letter-spacing:-.035em;color:var(--navy);max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--tan)}
+.hero p{margin-top:20px;color:var(--muted);max-width:54ch;font-size:17px}
+.stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:32px}
+.stats b{display:block;font-size:28px;font-weight:800;color:var(--navy);line-height:1.1}
+.stats span{font-size:13px;color:var(--muted)}
+
+/* filter */
+.filters{padding:28px 0 4px}
+.filters .wrap{display:flex;gap:10px;flex-wrap:wrap}
+.filters button{font:700 14px var(--font);color:var(--navy);background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:10px 20px;cursor:pointer}
+.filters button:hover{border-color:var(--navy)}
+.filters button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* gallery */
+.cat{padding:44px 0 8px}
+.cat[hidden]{display:none}
+.cat-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px}
+.cat-head h2{font-size:clamp(26px,3.6vw,38px);line-height:1.15;font-weight:800;letter-spacing:-.025em;color:var(--navy)}
+.cat-head span.count{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.item{background:none;border:0;padding:0;text-align:left;font:inherit;color:inherit;cursor:zoom-in}
+.item .ph{aspect-ratio:4/3;border-radius:16px;overflow:hidden;position:relative;background:linear-gradient(135deg,#D9CDBB,#B9A58A)}
+.item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.item:hover img{transform:scale(1.04)}
+.item .fallback{position:absolute;inset:0;display:none;align-items:flex-end;padding:16px;color:var(--navy);font-weight:800;font-size:19px;line-height:1.2;letter-spacing:-.01em}
+.item.noimg .fallback{display:flex}
+.item.noimg img{display:none}
+.item h3{font-size:16px;font-weight:700;margin-top:12px;color:var(--navy);line-height:1.3}
+.item p{font-size:13.5px;color:var(--muted);margin-top:2px}
+
+/* lightbox */
+dialog{border:0;padding:0;background:transparent;max-width:min(980px,94vw);width:100%;border-radius:18px;overflow:hidden}
+dialog::backdrop{background:rgba(14,39,71,.8)}
+.lb{background:#fff}
+.lb .ph{aspect-ratio:16/10;background:linear-gradient(135deg,#D9CDBB,#B9A58A)}
+.lb img{width:100%;height:100%;object-fit:cover;display:block}
+.lb .cap{padding:16px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.lb h3{font-size:19px;font-weight:800;color:var(--navy)}
+.lb p{color:var(--muted);font-size:14px}
+.lb button{font:700 13px var(--font);background:var(--navy);color:#fff;border:0;border-radius:999px;padding:10px 20px;cursor:pointer}
+
+/* brands */
+.brands{margin-top:64px;background:var(--beige);padding:56px 0 64px;overflow:hidden}
+.brands .head{margin-bottom:30px}
+.brands h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.025em;color:var(--navy);line-height:1.15}
+.rail{display:flex;width:max-content;animation:slide 45s linear infinite}
+.brands:hover .rail,.brands:focus-within .rail{animation-play-state:paused}
+.rail ul{display:flex;list-style:none;padding:0}
+.rail li{flex:none;margin-right:18px}
+.brand{display:flex;align-items:center;justify-content:center;height:84px;min-width:210px;padding:0 28px;background:#fff;border:1px solid var(--line);
+  border-radius:14px;font-weight:800;font-size:17px;color:var(--navy);white-space:nowrap;letter-spacing:-.01em}
+.brand img{max-height:48px;max-width:150px;display:block}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* closing call to action + footer */
+.cta{background:var(--navy);color:#fff;padding:72px 0;text-align:center}
+.cta h2{font-size:clamp(28px,4.5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.cta p{margin:14px auto 28px;max-width:46ch;color:#BCC8DA}
+.cta .pill{background:#fff;color:var(--navy)!important;display:inline-block;padding:14px 26px;font-size:15px}
+.cta .pill:hover{background:var(--beige)}
+footer{background:#0A1E38;color:#8FA0BA;text-align:center;font-size:13px;padding:20px}
+
+@media (prefers-reduced-motion:reduce){
+  .rail{animation:none}.brands{overflow-x:auto}.item img{transition:none}html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Home">
+      <img src="images/logo.png" alt="Company logo" onerror="this.replaceWith(document.createTextNode('Your Logo'))">
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="index.html#process">Our Process</a>
+      <a href="gallery.html" aria-current="page">Projects</a>
+      <a href="index.html#textures">Textures</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="pill" href="https://wa.me/910000000000" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="label">Our projects</span>
+    <h1>Spaces we have <em>painted.</em></h1>
+    <p>Apartments, hospitals and campuses across Karnataka. Browse by type and tap any photo to see it larger.</p>
+    <div class="stats">
+      <div><b>24</b><span>Projects</span></div>
+      <div><b>12</b><span>Residential</span></div>
+      <div><b>3</b><span>Commercial</span></div>
+      <div><b>9</b><span>Schools &amp; colleges</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="filters">
+  <div class="wrap" role="group" aria-label="Filter projects">
+    <button data-f="all" aria-pressed="true">All</button>
+    <button data-f="residential" aria-pressed="false">Residential</button>
+    <button data-f="commercial" aria-pressed="false">Commercial</button>
+    <button data-f="education" aria-pressed="false">Schools &amp; Colleges</button>
+  </div>
+</div>
+
+<main class="wrap" id="gallery"></main>
+
+<section class="brands" aria-label="Brands we have worked with">
+  <div class="wrap head">
+    <span class="label">Our clients</span>
+    <h2>Brands we have worked with</h2>
+  </div>
+  <div class="rail" id="rail"></div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2>Ready to transform your space?</h2>
+    <p>Tell us about your project and we will get back to you with a plan and a quote.</p>
+    <a class="pill" href="https://wa.me/910000000000" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+</section>
+<footer>&copy; <span id="yr"></span> Your Company Name. All rights reserved.</footer>
+
+<dialog id="lb" aria-label="Project photo">
+  <div class="lb">
+    <div class="ph"><img id="lbImg" alt=""></div>
+    <div class="cap">
+      <div><h3 id="lbName"></h3><p id="lbLoc"></p></div>
+      <button id="lbClose">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* ---------- EDIT HERE ----------
+   img = photo saved in the /images folder. Missing photos show a name tile. */
+const projects = [
+ {c:"residential", n:"Nambiar District 25",       l:"Dommasandra, Off Sarjapur Road, Bengaluru", img:"images/nambiar-district-25.jpg"},
+ {c:"residential", n:"Nambiar Bellezea",          l:"Narayanaghatta / Harohalli, Bengaluru",     img:"images/nambiar-bellezea.jpg"},
+ {c:"residential", n:"Nambiar Ellegenza",         l:"Gopasandra, Bengaluru",                     img:"images/nambiar-ellegenza.jpg"},
+ {c:"residential", n:"Nambiar Millenia",          l:"Muthanallur, Bommasandra, Bengaluru",       img:"images/nambiar-millenia.jpg"},
+ {c:"residential", n:"Bren Aspera",               l:"Huskur, Bengaluru",                         img:"images/bren-aspera.jpg"},
+ {c:"residential", n:"Bren Pominus",              l:"Kaikondrahalli, Bengaluru",                 img:"images/bren-pominus.jpg"},
+ {c:"residential", n:"HM Scottsville",            l:"Kasavanahalli, Off Sarjapur Road, Bengaluru", img:"images/hm-scottsville.jpg"},
+ {c:"residential", n:"Valmark Cityville",         l:"Tejaswini Nagar / Bannerghatta Road, Bengaluru", img:"images/valmark-cityville.jpg"},
+ {c:"residential", n:"Navami Chamara Heights",    l:"Ullal, Bengaluru",                          img:"images/navami-chamara-heights.jpg"},
+ {c:"residential", n:"Hoysala Hallmark",          l:"Nagavara / Veerannapalya, Bengaluru",       img:"images/hoysala-hallmark.jpg"},
+ {c:"residential", n:"Arvind Bel Air",            l:"Vidyaranyapura, Bengaluru",                 img:"images/arvind-bel-air.jpg"},
+ {c:"residential", n:"Arvind The Edge",           l:"Nagasandra, Bengaluru",                     img:"images/arvind-the-edge.jpg"},
+ {c:"commercial",  n:"Bangalore One",             l:"Bengaluru, Karnataka",                      img:"images/bangalore-one.jpg"},
+ {c:"commercial",  n:"Aveksha Hospitals – Yelahanka", l:"Yelahanka, Bengaluru",                  img:"images/aveksha-yelahanka.jpg"},
+ {c:"commercial",  n:"Aveksha Hospitals – MS Palya",  l:"MS Palya, Bengaluru",                   img:"images/aveksha-ms-palya.jpg"},
+ {c:"education",   n:"Nitte Meenakshi Institute of Technology (NMIT)", l:"Yelahanka, Bengaluru", img:"images/nmit.jpg"},
+ {c:"education",   n:"JAIN University – Global Campus", l:"Jakkasandra, Kanakapura, Karnataka",  img:"images/jain-global-campus.jpg"},
+ {c:"education",   n:"Xavier Institute of Management & Entrepreneurship (XIME)", l:"Electronic City, Bengaluru", img:"images/xime.jpg"},
+ {c:"education",   n:"Rashtrotthana Vidya Kendra (RVK)", l:"Dharwad, Karnataka",                 img:"images/rvk-dharwad.jpg"},
+ {c:"education",   n:"Rashtrotthana Vidya Kendra (CBSE) – Srinagar", l:"Srinagar 2nd Stage, Mysuru", img:"images/rvk-srinagar.jpg"},
+ {c:"education",   n:"Rashtrotthana Vidya Kendra (CBSE) – Vijayanagar", l:"Vijayanagar, Mysuru",   img:"images/rvk-vijayanagar.jpg"},
+ {c:"education",   n:"Rashtrotthana Vidya Kendra (CBSE) – Sattur", l:"Sattur, Dharwad",          img:"images/rvk-sattur.jpg"},
+ {c:"education",   n:"Rashtrotthana Vidya Kendra (CBSE) – Davanagere", l:"Nittuvalli, Davanagere", img:"images/rvk-davanagere.jpg"},
+ {c:"education",   n:"Rashtrotthana Vidya Kendra (CBSE) – Hagaribommanahalli", l:"Hagaribommanahalli, Vijayanagara District", img:"images/rvk-hagaribommanahalli.jpg"},
+];
+const cats = {residential:"Residential", commercial:"Commercial", education:"Schools & Colleges"};
+/* Add logo:"images/xyz.png" to any brand to show its logo instead of text. */
+const brands = [
+ {n:"Nambiar Builders"},{n:"Bren Corporation"},{n:"Bangalore One"},{n:"NMIT"},
+ {n:"Rashtrotthana Vidya Kendra"},{n:"JAIN University"},{n:"Valmark"},{n:"Navami"},
+ {n:"Hoysala"},{n:"Aveksha Hospitals"},{n:"Arvind"},{n:"XIME"},{n:"HM Scottsville"}
+];
+
+/* ---------- build gallery ---------- */
+const root=document.getElementById("gallery");
+Object.keys(cats).forEach(key=>{
+  const list=projects.filter(p=>p.c===key);
+  const sec=document.createElement("section");
+  sec.className="cat"; sec.dataset.cat=key; sec.id=key;
+  sec.innerHTML=`<div class="cat-head"><div><span class="label">${list.length} projects</span><h2>${cats[key]}</h2></div></div><div class="grid"></div>`;
+  const grid=sec.querySelector(".grid");
+  list.forEach(p=>{
+    const b=document.createElement("button");
+    b.className="item"; b.type="button";
+    b.innerHTML=`<div class="ph"><img loading="lazy" alt="${p.n}" src="${p.img}"><div class="fallback">${p.n}</div></div><h3>${p.n}</h3><p>${p.l}</p>`;
+    b.querySelector("img").addEventListener("error",()=>b.classList.add("noimg"));
+    b.addEventListener("click",()=>openLb(p,b.classList.contains("noimg")));
+    grid.appendChild(b);
+  });
+  root.appendChild(sec);
+});
+
+/* ---------- filter ---------- */
+document.querySelectorAll(".filters button").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",x===btn));
+    const f=btn.dataset.f;
+    document.querySelectorAll(".cat").forEach(s=>s.hidden=!(f==="all"||s.dataset.cat===f));
+  });
+});
+
+/* ---------- lightbox ---------- */
+const lb=document.getElementById("lb");
+function openLb(p,missing){
+  document.getElementById("lbName").textContent=p.n;
+  document.getElementById("lbLoc").textContent=p.l;
+  const im=document.getElementById("lbImg");
+  im.style.visibility=missing?"hidden":"visible";
+  im.src=missing?"":p.img; im.alt=p.n;
+  lb.showModal();
+}
+document.getElementById("lbClose").onclick=()=>lb.close();
+lb.addEventListener("click",e=>{if(e.target===lb)lb.close();});
+
+/* ---------- brand slider (list doubled for a seamless loop) ---------- */
+const rail=document.getElementById("rail");
+const makeList=hidden=>{
+  const ul=document.createElement("ul");
+  if(hidden)ul.setAttribute("aria-hidden","true");
+  brands.forEach(b=>{
+    const li=document.createElement("li");
+    li.innerHTML=`<div class="brand">${b.logo?`<img src="${b.logo}" alt="${b.n}">`:b.n}</div>`;
+    ul.appendChild(li);
+  });
+  return ul;
+};
+rail.append(makeList(false),makeList(true));
+
+/* ---------- mobile menu + year ---------- */
+const mb=document.getElementById("menuBtn"),lk=document.getElementById("links");
+mb.addEventListener("click",()=>{const o=lk.classList.toggle("open");mb.setAttribute("aria-expanded",o);});
+document.getElementById("yr").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="88" viewBox="0 0 1250 88">
+<rect width="1250" height="88" fill="#FFFFFF"/><path d="M0 87.5H1250" stroke="#E9E5DE"/>
+<g transform="translate(58,22)"><path d="M0 24 11 0l11 24z" fill="#6CC04A"/><path d="M17 24 28 0l11 24z" fill="#E8375A"/><path d="M34 24 45 0l11 24z" fill="#F1BD3D"/><path d="M51 24 62 0l11 24z" fill="#283B62"/></g>
+<text x="139" y="43" font-family="Manrope,Arial,sans-serif" font-size="21" font-weight="800" letter-spacing=".4" fill="#172536">MORWIN</text>
+<text x="140" y="59" font-family="Manrope,Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#68717A">SOLUTIONS</text>
+<g font-family="Manrope,Arial,sans-serif" font-size="14" fill="#273546">
+<text x="275" y="51">Home</text><text x="355" y="51">Our Process</text><text x="482" y="51" font-weight="700" fill="#233F78">Projects</text><path d="M482 63h55" stroke="#233F78" stroke-width="2"/><text x="568" y="51">Textures</text><text x="657" y="51">About</text><text x="726" y="51">Contact</text></g>
+<rect x="1000" y="17" width="205" height="54" rx="27" fill="#203D78"/>
+<circle cx="1027" cy="44" r="10" fill="none" stroke="#FFF" stroke-width="1.8"/><path d="M1024 40q1 5 6 7l2-2 3 2q-1 4-5 3-7-3-8-9z" fill="#FFF"/>
+<text x="1045" y="49" font-family="Manrope,Arial,sans-serif" font-size="13" font-weight="700" fill="#FFF">Chat on WhatsApp</text><path d="M1185 44h11m-5-5 5 5-5 5" fill="none" stroke="#FFF" stroke-width="1.6"/>
+</svg>
