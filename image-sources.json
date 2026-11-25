@@ -1,0 +1,333 @@
+{
+  "verifiedOn": "2026-11-25",
+  "verification": "Project identity and official source checked; this does not establish photographic ownership or prove Morwin painting execution. Renders are labelled.",
+  "images": [
+    {
+      "id": "nambiar-district-25",
+      "source": "https://nambiarbuilders.com/district25/",
+      "imageUrl": "https://nambiarbuilders.com/wp-content/uploads/2025/08/d25-exterior3.jpg",
+      "kind": "render",
+      "note": "Project-specific exterior on the official developer page; Bellezea and Ellegenza sections label these Actual Shot.",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "image": "assets/verified/nambiar-district-25.webp",
+      "sha256": "1586fec5903bcdbaa7273d77931c548d66fc94583aa94c3e8e962b1be9bf400d",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "nambiar-bellezea",
+      "source": "https://nambiarbuilders.com/bellezea/",
+      "imageUrl": "https://nambiarbuilders.com/wp-content/uploads/2025/07/blz-sect3-view2.jpg",
+      "kind": "photo",
+      "note": "Project-specific exterior on the official developer page; Bellezea and Ellegenza sections label these Actual Shot.",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "image": "assets/verified/nambiar-bellezea.webp",
+      "sha256": "d4e03fac4051cf2b62710c3a2848ccbe947145fdca28ee82bb5d56178e8f65dd",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "nambiar-ellegenza",
+      "source": "https://nambiarbuilders.com/ellegenza/",
+      "imageUrl": "https://nambiarbuilders.com/wp-content/uploads/2025/07/elg-ph1-view-1.jpg",
+      "kind": "photo",
+      "note": "Project-specific exterior on the official developer page; Bellezea and Ellegenza sections label these Actual Shot.",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "image": "assets/verified/nambiar-ellegenza.webp",
+      "sha256": "db77e122892f490df5a4d5b3d830eb7cf3942d4829de301780c75372ae71d042",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "nambiar-millenia",
+      "source": "https://nambiarbuilders.com/millenia/",
+      "imageUrl": "https://nambiarbuilders.com/wp-content/uploads/2025/07/millenia-3d-exterior-1.jpg",
+      "kind": "render",
+      "note": "Project-specific exterior on the official developer page; Bellezea and Ellegenza sections label these Actual Shot.",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "image": "assets/verified/nambiar-millenia.webp",
+      "sha256": "4b63bcb55a958a31d59b33fb81ce0c5d4a78344232279f6b9dfe1ca80529b93f",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "bren-aspera",
+      "source": "https://bren.com/aspera/3bhk-apartments-in-omr-road-bandapura",
+      "imageUrl": "https://bren.com/assets/images/projects/card/bren-aspera.jpg",
+      "kind": "render",
+      "note": "Official project social preview identifies Aspera; original Huskur location conflicts with developer address.",
+      "location": "Bandapura, Old Madras Road, Bengaluru",
+      "originalSize": [
+        890,
+        1040
+      ],
+      "image": "assets/verified/bren-aspera.webp",
+      "sha256": "8014887873af82f1ae772c84a8d6a4e671c082481d6362f90ab13f14227495e9",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "bren-pominus",
+      "source": "https://bren.com/project.php?project=bren-prominus",
+      "imageUrl": "https://bren.com/assets/images/projects/card/bren-prominus.jpg",
+      "kind": "render",
+      "note": "Official spelling is Prominus; developer describes commercial/mixed-use development.",
+      "name": "Bren Prominus",
+      "category": "commercial",
+      "originalSize": [
+        890,
+        1040
+      ],
+      "image": "assets/verified/bren-pominus.webp",
+      "sha256": "cca8bd367f539f2de4c71db4a8185f95ab4e54358617bcd0093557613e522928",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "hm-scottsville",
+      "source": "https://hmscottsville.com/",
+      "imageUrl": "https://hmscottsville.com/wp-content/themes/hm-scottsville/img/banner-new.webp",
+      "kind": "render",
+      "note": "Project hero on the official HM Scottsville website.",
+      "originalSize": [
+        1900,
+        1069
+      ],
+      "image": "assets/verified/hm-scottsville.webp",
+      "sha256": "4f1121b68c54247941b5949507c52468b810c11e5a830c84fd9ef6af6d32e2c1",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "valmark-cityville",
+      "source": "https://www.valmark.in/",
+      "imageUrl": "https://valmarkdevelopers.s3.ap-south-1.amazonaws.com/public/valmark/files/1757317162612-CityVille-hero.webp-f588c9872f9b699c.webp",
+      "kind": "photo",
+      "note": "Official developer homepage slide identifies CityVille and links to cityville.in.",
+      "originalSize": [
+        4528,
+        3016
+      ],
+      "image": "assets/verified/valmark-cityville.webp",
+      "sha256": "200a38e5040d7ebcd1fe0f7c7b07adbd8b465b34d418654b130cdacdea0f9e80",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "navami-chamara-heights",
+      "source": "https://navamichamaraheights.com/",
+      "imageUrl": "https://navamichamaraheights.com/wp-content/uploads/2026/08/Aerial-Day.jpg",
+      "kind": "render",
+      "note": "Aerial project image from the named project official website.",
+      "originalSize": [
+        6000,
+        3375
+      ],
+      "image": "assets/verified/navami-chamara-heights.webp",
+      "sha256": "c3d13cb2ad4a591d9de5b281815921dd9747a6738638207d10860ab2c383fc68",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "hoysala-hallmark",
+      "source": "https://hoysalaprojects.com/projects/",
+      "imageUrl": "https://hoysalaprojects.com/wp-content/uploads/2026/07/Hoysala-Hallmark.webp",
+      "kind": "render",
+      "note": "Image directly accompanies Hoysala Hall mark lalith, Nagavara, Hebbal.",
+      "name": "Hoysala Hallmark Lalith",
+      "originalSize": [
+        570,
+        544
+      ],
+      "image": "assets/verified/hoysala-hallmark.webp",
+      "sha256": "69197d0a1ca35f6d2b4d76d3e078e95dedb472b9cdea3a358d7ffa20d425ed21",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "arvind-bel-air",
+      "source": "https://www.arvindsmartspaces.com/projects/arvind-bel-air/",
+      "imageUrl": "https://www.arvindsmartspaces.com/wp-content/uploads/2022/01/arvind-bel-air-new.jpg",
+      "kind": "render",
+      "note": "Official named project preview; replaced the former AI reference. Official site uses Yelahanka.",
+      "location": "Yelahanka, Bengaluru",
+      "originalSize": [
+        376,
+        420
+      ],
+      "image": "assets/verified/arvind-bel-air.webp",
+      "sha256": "5c9618157609515e93725109d84207779143ee45aab4bda30e193942f48d2096",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "arvind-the-edge",
+      "source": "https://www.arvindsmartspaces.com/projects/arvind-the-edge/",
+      "imageUrl": "https://www.arvindsmartspaces.com/wp-content/uploads/2022/01/arvind-edge-new.jpg",
+      "kind": "render",
+      "note": "Official project preview; developer identifies retail and office spaces, so moved to Commercial.",
+      "category": "commercial",
+      "location": "Nagasandra, Tumkur Road, Bengaluru",
+      "originalSize": [
+        376,
+        420
+      ],
+      "image": "assets/verified/arvind-the-edge.webp",
+      "sha256": "eb5f8e8ad33d11cd955f86159a9fa196e1894b203c3f7121cfd66b25916f6df4",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "aveksha-ms-palya",
+      "source": "https://avekshahospital.com/",
+      "imageUrl": "https://avekshahospital.com/wp-content/uploads/2024/09/Homepage-Slider-1.jpg",
+      "kind": "photo",
+      "note": "Official hospital exterior carrying MS Palya signage and official contact location.",
+      "originalSize": [
+        555,
+        620
+      ],
+      "image": "assets/verified/aveksha-ms-palya.webp",
+      "sha256": "cffb14c8ae26e6b5aa98b934ffbf06d3ec69653a315e29d88e1d1a602a1a3d7f",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "aveksha-yelahanka",
+      "source": "https://avekshahospital.com/careers-yelahanka-branch/",
+      "imageUrl": "https://avekshahospital.com/wp-content/uploads/2025/08/aveksha-yelahanka1.jpg",
+      "kind": "render",
+      "note": "Image named aveksha-yelahanka1 in the explicitly named branch page; corrected a missing slash in the source HTML URL.",
+      "originalSize": [
+        738,
+        700
+      ],
+      "image": "assets/verified/aveksha-yelahanka.webp",
+      "sha256": "fed2ed97087ee737412eeb7d6c8db4e27833ee966f7ad3b5e0fc20fc1f3dc595",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "jain-global-campus",
+      "source": "https://www.jainuniversity.ac.in/contact",
+      "imageUrl": "https://www.jainuniversity.ac.in/jain/theme/assets/images/academics/jgi-center-for-emerging-technologies.jpg",
+      "kind": "photo",
+      "note": "School of Engineering and Technology image adjacent to JAIN Global Campus, Jakkasandra address.",
+      "originalSize": [
+        680,
+        510
+      ],
+      "image": "assets/verified/jain-global-campus.webp",
+      "sha256": "120d2ba03946ab1aec963f809bad6e3b18e5ba333d61500b796321ba90f4b77a",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "xime",
+      "source": "https://xime.org/",
+      "imageUrl": "https://xime.org/uploads/campus/thumb/1728720662_2025-12-31_11-44-45.webp",
+      "kind": "photo",
+      "note": "Image is explicitly labelled XIME Bangalore; separate Kochi and Chennai images were excluded.",
+      "originalSize": [
+        788,
+        457
+      ],
+      "image": "assets/verified/xime.webp",
+      "sha256": "45e2b3f8aa8a70a9f944e2a273b6e68fc854f176cc118996de90cfa39090f44d",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "rvk-dharwad",
+      "source": "https://rvkcbse.in/web/about-us/",
+      "imageUrl": "https://rvkcbse.in/web/wp-content/uploads/2025/09/dharwad-elevation-min.jpg",
+      "kind": "photo",
+      "note": "Image adjacent to the named campus in the official central RVK history. Dharwad near Neeralakatti and Sattur are distinct campuses.",
+      "originalSize": [
+        600,
+        400
+      ],
+      "image": "assets/verified/rvk-dharwad.webp",
+      "sha256": "3adfa3ecfa8167aeccc763a42c6cf767f69056913a7731a4ee6b21590facd36c",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "rvk-srinagar",
+      "source": "https://rvkcbse.in/web/about-us/",
+      "imageUrl": "https://rvkcbse.in/web/wp-content/uploads/2025/09/srinagar-elevation-min.jpg",
+      "kind": "photo",
+      "note": "Image adjacent to the named campus in the official central RVK history. Dharwad near Neeralakatti and Sattur are distinct campuses.",
+      "originalSize": [
+        600,
+        400
+      ],
+      "image": "assets/verified/rvk-srinagar.webp",
+      "sha256": "081c15193f38b65f6c5af7a5d430519a01a9ae968508607d80b09f008ae0e535",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "rvk-vijayanagar",
+      "source": "https://rvkcbse.in/web/about-us/",
+      "imageUrl": "https://rvkcbse.in/web/wp-content/uploads/2025/09/vijaynagar-elevation-min.jpg",
+      "kind": "photo",
+      "note": "Image adjacent to the named campus in the official central RVK history. Dharwad near Neeralakatti and Sattur are distinct campuses.",
+      "originalSize": [
+        600,
+        400
+      ],
+      "image": "assets/verified/rvk-vijayanagar.webp",
+      "sha256": "7e80ee06b13e82cc9cb74d8d03564b2fcf3fdab9634405068294c194f9e1c835",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "rvk-sattur",
+      "source": "https://rvkcbse.in/web/about-us/",
+      "imageUrl": "https://rvkcbse.in/web/wp-content/uploads/2025/09/sattur-elevation-min.jpg",
+      "kind": "photo",
+      "note": "Image adjacent to the named campus in the official central RVK history. Dharwad near Neeralakatti and Sattur are distinct campuses.",
+      "originalSize": [
+        600,
+        400
+      ],
+      "image": "assets/verified/rvk-sattur.webp",
+      "sha256": "0ea091de1e2fe2255ed89dd23ceff6efc0665aee7ed6ebd1cb3a977b22cc95c2",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "rvk-davanagere",
+      "source": "https://rvkcbse.in/web/about-us/",
+      "imageUrl": "https://rvkcbse.in/web/wp-content/uploads/2025/09/davangere-elevation-min.jpg",
+      "kind": "photo",
+      "note": "Image adjacent to the named campus in the official central RVK history. Dharwad near Neeralakatti and Sattur are distinct campuses.",
+      "originalSize": [
+        600,
+        400
+      ],
+      "image": "assets/verified/rvk-davanagere.webp",
+      "sha256": "895b78bd352060355dcb91bd11cf51ec2c96c119cdd4739e0e1c5a8b82152f90",
+      "verifiedOn": "2026-11-25"
+    },
+    {
+      "id": "rvk-hagaribommanahalli",
+      "source": "https://rvkcbse.in/web/about-us/",
+      "imageUrl": "https://rvkcbse.in/web/wp-content/uploads/2025/09/hb-halli-elevation-min.jpg",
+      "kind": "photo",
+      "note": "Image adjacent to the named campus in the official central RVK history. Dharwad near Neeralakatti and Sattur are distinct campuses.",
+      "originalSize": [
+        600,
+        400
+      ],
+      "image": "assets/verified/rvk-hagaribommanahalli.webp",
+      "sha256": "db3c74bc379bcda137d9f98bdbafa313857e6cb5e78db6a9ab82a8c53105c41b",
+      "verifiedOn": "2026-11-25"
+    }
+  ],
+  "missing": [
+    {
+      "id": "bangalore-one",
+      "name": "Bangalore One",
+      "reason": "Specific centre/branch is not supplied. Karnataka One lists many Bengaluru centres; no building image can be matched reliably to this project."
+    },
+    {
+      "id": "nmit",
+      "name": "Nitte Meenakshi Institute of Technology (NMIT)",
+      "reason": "Official NMIT pages examined supplied student banners and hostel-room interiors; no suitable verified building exterior was located. Left unfilled instead of using student or unrelated-campus images."
+    }
+  ]
+}

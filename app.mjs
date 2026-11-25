@@ -33,9 +33,11 @@ if(dialog){
   document.querySelector('#dialog-location').textContent=project.location;
   document.querySelector('#dialog-category').textContent=categories[project.category];
   const media=document.querySelector('#dialog-media');media.replaceChildren();
-  if(project.image){const image=document.createElement('img');image.src=project.image;image.alt=`${project.name} building reference`;media.append(image);}
-  else{const placeholder=document.createElement('p');placeholder.className='dialog-placeholder';placeholder.textContent='Project photos will be added soon.';media.append(placeholder);}
+  if(project.image){const image=document.createElement('img');image.src=project.image;image.alt=`${project.name} ${project.imageKind==='render'?'official developer render':'official building photograph'}`;media.append(image);}
+  else{const placeholder=document.createElement('p');placeholder.className='dialog-placeholder';placeholder.textContent=project.id==='bangalore-one'?'Verified photo pending — exact Bangalore One centre needed.':'Verified building photo pending.';media.append(placeholder);}
   document.querySelector('#dialog-inquiry').href=whatsappUrl(`Hello Morwin Solutions, I would like to discuss a project similar to ${project.name}.`);
+  const credit=document.querySelector('#dialog-credit');credit.replaceChildren();
+  if(project.source){const source=document.createElement('a');source.href=project.source;source.target='_blank';source.rel='noopener';source.textContent=project.imageKind==='render'?'Official developer render · View source ↗':'Official project photograph · View source ↗';credit.append(source);}
   dialog.showModal();document.body.style.overflow='hidden';document.querySelector('.dialog-close').focus();
  });
  dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
