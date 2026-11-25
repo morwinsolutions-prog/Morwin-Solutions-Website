@@ -1,7 +1,0 @@
-.DS_Store
-Thumbs.db
-Desktop.ini
-__pycache__/
-.env
-.env.*
-!.env.example

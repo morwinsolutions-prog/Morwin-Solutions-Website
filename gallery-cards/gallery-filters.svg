@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="86" viewBox="0 0 1250 86">
-<rect width="1250" height="86" fill="#FFF"/>
-<g font-family="Manrope,Arial,sans-serif" font-size="14" font-weight="700">
-<rect x="80" y="18" width="92" height="48" rx="24" fill="#203D78"/><text x="126" y="48" text-anchor="middle" fill="#FFF">All</text>
-<rect x="188" y="18" width="166" height="48" rx="24" fill="#FFF" stroke="#D7DCE5"/><text x="271" y="48" text-anchor="middle" fill="#263748">Residential</text>
-<rect x="370" y="18" width="164" height="48" rx="24" fill="#FFF" stroke="#D7DCE5"/><text x="452" y="48" text-anchor="middle" fill="#263748">Commercial</text>
-<rect x="550" y="18" width="212" height="48" rx="24" fill="#FFF" stroke="#D7DCE5"/><text x="656" y="48" text-anchor="middle" fill="#263748">Schools &amp; Colleges</text>
-</g></svg>
